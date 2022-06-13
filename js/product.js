@@ -113,7 +113,8 @@ function renderProduct() {
 
     const content = product.map((item, index) => {
         if(index >= start && index < end) {
-            html += '<div class="product">';
+            
+        html += '<div class="product">';
         html += '<div class="img-product">';
         html += '<a href=' + item.src + ' target="_blank">';
         html += '<img src='+ item.image +'>';
