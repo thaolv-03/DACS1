@@ -1,0 +1,105 @@
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .page {
+        height: 100vh !important;
+    }
+
+    body {
+        background-size: cover;
+    }
+
+    .signup {
+        padding-left: 0 !important;
+        margin-top: 7% !important;
+    }
+
+    .signup-container {
+        width: 100% !important;
+    }
+
+    .signup-input-container {
+        width: 60% !important;
+    }
+
+    .signup-img {
+        display: none;
+    }
+
+    .brain {
+        margin-left: 40px !important;
+        padding: 20px 0;
+    }
+
+    .brain-img {
+        width: 80% !important;
+        
+    }
+
+    .brain-img img {
+        width: 90% !important;
+    }
+
+    .signup-btn {
+        width: 60% !important;
+        margin-top: 20px;
+    }
+
+    .signup-orther {
+        width: 60% !important;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    .page {
+        height: 100vh !important;
+    }
+
+    body {
+        background-size: cover;
+    }
+
+    .signup {
+        width: 90% !important;
+        padding-left: 0 !important;
+        margin-top: 10% !important;
+    }
+
+    .signup-img {
+        display: none;
+    }
+
+    .brain {
+        margin-left: 30px !important;
+    }
+
+    .brain-img {
+        width: 80% !important;
+    }
+
+    .brain-img img {
+        width: 90% !important;
+    }
+
+    .signup-container {
+        width: 100% !important;
+    }
+
+    .signup-title {
+        font-size: 33px !important;
+    }
+
+    .signup-input-container {
+        width: 80% !important;
+    }
+
+    .signup-btn {
+        width: 80% !important;
+        margin-top: 20px;
+    }
+
+    .signup-orther {
+        width: 80% !important;
+    }
+}

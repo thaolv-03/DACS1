@@ -39,6 +39,7 @@ input {
     font-size: 14px;
     font-weight: 400;
     outline: none;
+    /* font-family: 'Montserrat', sans-serif !important; */
 }
 
 .header__search--btn {
@@ -172,4 +173,41 @@ input {
     display: none;
     cursor: default;
 }
+
+.user-container {
+    position: relative;
+
+}
+
+.user {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+
+.user a {
+    text-decoration: none;
+    color: black;
+}
+
+.user a:hover {
+    color: #0072ff;
+}
+
+
+
 
