@@ -1,4 +1,7 @@
 # WEBSITE BÁN HÀNG CÔNG NGHỆ TH-TECH
+- Technology ![image](https://user-images.githubusercontent.com/85724290/174538444-f37a405d-8107-4749-87ef-c56cffdf32cd.png) ![image](https://user-images.githubusercontent.com/85724290/174538480-330e8e27-e80d-4b4a-8fdf-b88356a29b34.png) ![image](https://user-images.githubusercontent.com/85724290/174538576-c36aca67-2ea0-40b9-99c1-09852908dc4c.png) ![image](https://user-images.githubusercontent.com/85724290/174538618-a9c7cb88-7e01-4086-b47b-6eae0c62b8ae.png) 
+
+
 ```
 Login
 ```
