@@ -1,6 +1,6 @@
 
 const product = [
-    { id: 1, image: "./img/product1.webp", src: "./product1.html", productname: "ASUS ROG Phone 5S 8GB/128GB ZS676KS-1A111WW (Snapdragon 888+) (Đen) (Black)", productprice: "15.880.000 ₫", productcost: "16.990.000 ₫", productdiscount: "-6.53%" } ,
+    { id: 1, image: "./img/product1.webp", src: "./product1.html", productname: "ASUS ROG Phone 5S 8GB/128GB ZS676KS-1A111WW (Snapdragon 888+) (Đen) (Black)", productprice: "15.880.000 ₫", productcost: "16.990.000 ₫", productdiscount: "-6.53%" },
     { id: 2, image: "./img/product2.webp", src: "./product32.html", productname: "Tản nhiệt nước AIO ASUS ROG STRIX LC 360 RGB (Trắng)", productprice: "7.490.000 ₫", productcost: "", productdiscount: "" },
     { id: 3, image: "./img/product3.webp", src: "./product33.html", productname: "Tản nhiệt nước AIO ASUS TUF LC 240 ARGB (Đen)", productprice: "3.990.000 ₫", productcost: "", productdiscount: "" },
     { id: 4, image: "./img/product4.webp", src: "./product34.html", productname: "Quạt CPU Gigabyte Aorus ATC800", productprice: "2.390.000 ₫", productcost: "", productdiscount: "" },
@@ -110,27 +110,25 @@ function getCurrentPage(currentPage) {
 
 function renderProduct() {
     html = '';
-
     const content = product.map((item, index) => {
-        if(index >= start && index < end) {
-            
-        html += '<div class="product">';
-        html += '<div class="img-product">';
-        html += '<a href=' + item.src + ' target="_blank">';
-        html += '<img src='+ item.image +'>';
-        html += '</a>';
-        html += '</div>';
-        html += '<div class="product-name">';
-        html += '<a href=' + item.src + ' target="_blank">';
-        html += item.productname + '</a>';
-        html += '</div>';
-        html += '<div class="product-price">'+ item.productprice +'</div>';
-        html += '<div class="product-cost-discount">';
-        html += '<div class="product-cost">'+ item.productcost +'</div>';
-        html += '<div class="product-discount">'+ item.productdiscount +'</div>';
-        html += '</div>';
-        html += '</div>';
-        return html;
+        if (index >= start && index < end) {
+            html += '<div class="product">';
+            html += '<div class="img-product">';
+            html += '<a href=' + item.src + ' target="_blank">';
+            html += '<img src=' + item.image + '>';
+            html += '</a>';
+            html += '</div>';
+            html += '<div class="product-name">';
+            html += '<a href=' + item.src + ' target="_blank">';
+            html += item.productname + '</a>';
+            html += '</div>';
+            html += '<div class="product-price">' + item.productprice + '</div>';
+            html += '<div class="product-cost-discount">';
+            html += '<div class="product-cost">' + item.productcost + '</div>';
+            html += '<div class="product-discount">' + item.productdiscount + '</div>';
+            html += '</div>';
+            html += '</div>';
+            return html;
         }
     })
     document.getElementById('product').innerHTML = html;
@@ -151,14 +149,14 @@ function renderListPage() {
 function changePage() {
     const currentPages = document.querySelectorAll('.number-page li');
     console.log(currentPages);
-    for (let i=0 ; i < currentPages.length ; i++ ) {
-        currentPages[i].addEventListener('click', ()=> {
+    for (let i = 0; i < currentPages.length; i++) {
+        currentPages[i].addEventListener('click', () => {
             let value = i + 1;
             console.log(value);
             currentPage = value;
             $('.number-page li').removeClass('active');
             currentPages[i].classList.add('active');
-            if(currentPage > 1 && currentPage < totalPage) {
+            if (currentPage > 1 && currentPage < totalPage) {
                 $('.btn-prev').removeClass('btn-active');
                 $('.btn-next').removeClass('btn-active');
             }
@@ -175,7 +173,7 @@ function changePage() {
 }
 changePage();
 
-btnNext.addEventListener('click', ()=> {
+btnNext.addEventListener('click', () => {
     currentPage++;
     if (currentPage > totalPage) {
         currentPage = totalPage;
@@ -185,16 +183,16 @@ btnNext.addEventListener('click', ()=> {
     }
     $('.btn-prev').removeClass('btn-active');
     $('.number-page li').removeClass('active');
-    $(`.number-page li:eq(${currentPage-1})`).addClass('active');
+    $(`.number-page li:eq(${currentPage - 1})`).addClass('active');
     console.log(start, end);
     getCurrentPage(currentPage);
-    
+
     renderProduct();
 })
 
-btnPrev.addEventListener('click', ()=> {
+btnPrev.addEventListener('click', () => {
     currentPage--;
-    if (currentPage <= 1) { 
+    if (currentPage <= 1) {
         currentPage = 1;
     }
     if (currentPage === 1) {
@@ -202,9 +200,9 @@ btnPrev.addEventListener('click', ()=> {
     }
     $('.btn-next').removeClass('btn-active');
     $('.number-page li').removeClass('active');
-    $(`.number-page li:eq(${currentPage-1})`).addClass('active');
+    $(`.number-page li:eq(${currentPage - 1})`).addClass('active');
     console.log(start, end);
     getCurrentPage(currentPage);
-    
+
     renderProduct();
 })

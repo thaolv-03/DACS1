@@ -24,6 +24,7 @@
     /* opacity: 0.7; */
     overflow: hidden;
 }
+
 #btn-fb {
     position: fixed;
     bottom: 330px;
@@ -46,6 +47,7 @@
     /* opacity: 0.7; */
 
 }
+
 #btn-messenger {
     position: fixed;
     bottom: 270px;
@@ -66,6 +68,7 @@
     align-items: center;
     transition: 0.2s;
 }
+
 #btn-phone {
     position: fixed;
     bottom: 210px;
@@ -104,11 +107,12 @@
     border-radius: 50%;
     opacity: 0.7;
 }
-     
+
 .fa-arrow-up {
     font-size: 20px;
     color: #1435c3;
 }
+
 #myBtn:hover {
     background-color: #f1f1f1;
 }

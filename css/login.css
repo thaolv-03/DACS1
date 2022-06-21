@@ -125,7 +125,7 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     color: #fff;
-    background-color: rgb(87,184,70);
+    background-color: rgb(87, 184, 70);
     transition: 0.3s;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .forgot a:hover {
-    color: rgb(87,184,70);
+    color: rgb(87, 184, 70);
 }
 
 .login-orther {
@@ -189,7 +189,7 @@ body {
     margin-right: 10px;
 }
 
-.btn-fb button:hover ,
+.btn-fb button:hover,
 .btn-gg button:hover {
     cursor: pointer;
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
@@ -208,5 +208,5 @@ body {
 }
 
 .signup a:hover {
-    color: rgb(87,184,70);
+    color: rgb(87, 184, 70);
 }

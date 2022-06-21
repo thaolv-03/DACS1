@@ -1,5 +1,4 @@
 const btn = document.querySelectorAll(".product__buy button ")
-// console.log(btn);
 
 btn.forEach(function (button, index) {
     button.addEventListener('click', function (event) {
@@ -41,8 +40,7 @@ function addToCart(productName, productImg, productPrice) {
     cartTable.append(addTR)
   
     cartTotal()
-    deleteProductCart()
-    
+    deleteProductCart() 
 }
 
 function cartTotal() {
@@ -55,7 +53,6 @@ function cartTotal() {
         var productPrice1 = cartItem[i].querySelector("tr td p.span-price span").innerHTML
         totalA = inputValue*productPrice1*1000000
         totalB = totalB + totalA;
-        // console.log(totalB)
     }
 
     var cartTotalA = document.querySelector(".cart-price span")
@@ -63,8 +60,6 @@ function cartTotal() {
     cartTotalA.innerHTML = totalC 
     inputChange()
 }
-
-// Delete 
 
 function deleteProductCart() {
     var cartItem = document.querySelectorAll(".cart__exist table tbody tr")

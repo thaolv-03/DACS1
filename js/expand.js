@@ -6,8 +6,7 @@ document.getElementById("btn-expand").addEventListener("click", function(){
     document.getElementById("content").style.height = "4000px";
     document.getElementById("mist").style.height = "7320px";
     document.getElementById("btn-expand").style.display = "none";
-    document.getElementById("btn-collapse").style.display = "block";
-    
+    document.getElementById("btn-collapse").style.display = "block";  
 });
 
 document.getElementById("btn-collapse").addEventListener("click", function(){

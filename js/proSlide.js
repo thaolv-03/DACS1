@@ -12,7 +12,6 @@ document.querySelector('.btn-color-1').addEventListener('click', ()=> {
     $('.product__img2').removeClass('active');
 })
 
-
 document.querySelector('.btn-capacity-2').addEventListener('click', ()=> {
     $('.btn-capacity-2').addClass('active');
     $('.btn-capacity-1').removeClass('active');

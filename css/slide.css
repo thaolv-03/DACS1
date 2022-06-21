@@ -46,8 +46,9 @@
     display: flex;
     justify-content: space-between;
 }
-.carousel-indicators button  {
-	width: 10px;
+
+.carousel-indicators button {
+    width: 10px;
     height: 30px;
     background-color: #fff;
     opacity: 0.8;
@@ -81,6 +82,7 @@
     margin-bottom: 60px;
     font-size: 25px;
 }
+
 .carousel-control-next {
     margin-right: 8%;
     margin-bottom: 60px;
