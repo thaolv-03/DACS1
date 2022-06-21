@@ -207,10 +207,12 @@ input {
     color: #0072ff;
 }
 
+.user ul {
+    padding: 0;
+}
 
 .user ul li {
     padding-top: 10px;
-    
 }
 
 

@@ -38,8 +38,8 @@
         <!------ Header ------>
         <div class="header">
             <div class="header__logo">
-                <a href="./index.html"><img id="img1" src="./img/logoTH1.png" alt=""></a>
-                <a href="./index.html"><img id="img2" src="./img/iconTH.png" alt=""></a>
+                <a href="./homepage.html"><img id="img1" src="./img/logoTH1.png" alt=""></a>
+                <a href="./homepage.html"><img id="img2" src="./img/iconTH.png" alt=""></a>
                 <button class="btn-dmsp" onclick="Menu()">
                     <i class="fa-solid fa-bars"></i>
                     <span>Danh mục sản phẩm</span>
@@ -126,7 +126,15 @@
                     </div>
                 </div>
 
-                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-user" id="user-btn" onclick="user()"></i>
+                <div class="user-container">
+                    <div class="user" id="user" style="display: none;">
+                        <ul>
+                            <li><a href="">Thông tin cá nhân</a></li>
+                            <li><a href="./index.html">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
